@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //   Global Scope
+  var a = 15;
+  let b = 10;
+  const c = 25;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+  //Functional scope/local scope
+  function demo() {
+    let fName = "suyog";
+    const lName = "nagawade";
+    var rollNo = 12;
+  }
+  console.log(demo()); // Can't access because of functional scope
+  //Block scope
+  {
+    let m = "suyog";
+    const n = "nagawade";
+    var o = "bye";
+  }
+  //console.log(m); //can not use here
+  //console.log(n); //can not use here
+  console.log(o); //can use here
+</script>
